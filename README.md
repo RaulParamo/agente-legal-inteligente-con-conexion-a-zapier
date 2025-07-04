@@ -1,0 +1,44 @@
+# 🤖 Agente Legal Inteligente
+
+Sistema modular desarrollado en Python para responder consultas legales utilizando múltiples Modelos de Lenguaje (LLMs) locales con enrutamiento inteligente, clasificación temática y fallback automático. Compatible con modelos como **LLaMA3**, **Mistral** (a través de [Ollama](https://ollama.com/)).
+
+---
+
+## ⚙️ Características principales
+
+- 📚 **Clasificación temática** automática (Civil, Penal, Laboral).
+- 🧠 **Integración paralela de múltiples LLMs locales** (LLaMA3, Mistral).
+- 🧭 **Enrutamiento inteligente** según la categoría legal detectada.
+- 🔁 **Sistema de fallback** si la clasificación tiene baja confianza.
+- 📄 Simulación de documentos legales (normativas, políticas internas, contratos).
+- 🧾 **Historial de decisiones** registradas automáticamente.
+- 📡 Preparado para escalar con arquitectura RAG + LangChain (futuro).
+
+---
+
+## 🏗️ Arquitectura General
+
+- Python como lenguaje base.
+- `requests`, `concurrent.futures`, `logging`, `dataclasses` para operaciones principales.
+- Ollama para servir múltiples LLMs en local.
+- Modularidad clara para añadir nuevas categorías, modelos o reglas.
+
+> 💡 Para una implementación en la nube (Fase 2), se propone el uso de Azure + LangChain + LangGraph.
+
+---
+
+## 📦 Estructura del Proyecto
+📁 Agente legal
+├── agente_legal.py # Código principal del agente
+├── README.md # Este archivo
+
+---
+
+## ▶️ Cómo ejecutar el agente legal
+
+### 1. Tener [Ollama](https://ollama.com) instalado y corriendo:
+
+```bash
+ollama run llama3
+ollama run mistral
+
