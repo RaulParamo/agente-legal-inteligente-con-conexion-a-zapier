@@ -1,0 +1,50 @@
+2025-07-03 17:48:53,436 - LegalAgent - INFO - Agente Legal inicializado correctamente
+2025-07-03 18:05:13,282 - LegalAgent - INFO - Agente Legal inicializado correctamente.
+2025-07-03 18:05:31,628 - LegalAgent - INFO - Procesando pregunta (hash: 020b15e6253d31cdbcff2cc04ab3ba4e): 'que debo hacer si me roban mi id'
+2025-07-03 18:05:31,628 - LegalAgent - INFO - Decisión registrada: Tipo=classification, Categoría=desconocido, Confianza=0.40, Razonamiento='No se identificaron palabras clave claras'
+2025-07-03 18:05:31,629 - LegalAgent - WARNING - Baja confianza en la clasificación (0.40). Activando fallback a Ollama con contexto completo.
+2025-07-03 18:05:31,629 - LegalAgent.OllamaResponder - INFO - Enviando pregunta a Ollama (modelo: llama3)...
+2025-07-03 18:07:33,695 - LegalAgent.OllamaResponder - ERROR - Error al hacer la solicitud a Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-07-03 18:07:33,696 - LegalAgent - INFO - Decisión registrada: Tipo=fallback, Categoría=desconocido, Confianza=0.00, Razonamiento='Clasificación inicial con baja confianza, se usó Ollama con contexto general.'
+2025-07-03 18:09:36,422 - LegalAgent - INFO - Procesando pregunta (hash: 3c8bc20e7ebc37a8b86f61efa46c7027): 'si me roban mi id'
+2025-07-03 18:09:36,422 - LegalAgent - INFO - Decisión registrada: Tipo=classification, Categoría=desconocido, Confianza=0.40, Razonamiento='No se identificaron palabras clave claras'
+2025-07-03 18:09:36,423 - LegalAgent - WARNING - Baja confianza en la clasificación (0.40). Activando fallback a Ollama con contexto completo.
+2025-07-03 18:09:36,423 - LegalAgent.OllamaResponder - INFO - Enviando pregunta a Ollama (modelo: llama3)...
+2025-07-03 18:11:38,480 - LegalAgent.OllamaResponder - ERROR - Error al hacer la solicitud a Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-07-03 18:11:38,480 - LegalAgent - INFO - Decisión registrada: Tipo=fallback, Categoría=desconocido, Confianza=0.00, Razonamiento='Clasificación inicial con baja confianza, se usó Ollama con contexto general.'
+2025-07-03 21:36:54,874 - LegalAgent - INFO - Agente Legal inicializado correctamente.
+2025-07-03 21:38:09,469 - LegalAgent - INFO - Procesando pregunta (hash: b5c7ce98f2397c8158091b7c76d3ed62): 'el trabao es un derecho?'
+2025-07-03 21:38:09,470 - LegalAgent - INFO - Decisión registrada: Tipo=classification, Categoría=desconocido, Confianza=0.40, Razonamiento='No se identificaron palabras clave claras'
+2025-07-03 21:38:09,470 - LegalAgent - WARNING - Baja confianza en la clasificación (0.40). Activando fallback a Ollama con contexto completo.
+2025-07-03 21:38:09,470 - LegalAgent.OllamaResponder - INFO - Enviando pregunta a Ollama (modelo: llama3)...
+2025-07-03 21:40:11,525 - LegalAgent.OllamaResponder - ERROR - Error al hacer la solicitud a Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-07-03 21:40:11,546 - LegalAgent - INFO - Decisión registrada: Tipo=fallback, Categoría=desconocido, Confianza=0.00, Razonamiento='Clasificación inicial con baja confianza, se usó Ollama con contexto general.'
+2025-07-03 21:41:38,263 - LegalAgent - INFO - Procesando pregunta (hash: 49c3e309fc76b1aac4669a58d8ef7664): 'el trabajo es un derecho?'
+2025-07-03 21:41:38,264 - LegalAgent - INFO - Decisión registrada: Tipo=classification, Categoría=laboral, Confianza=0.95, Razonamiento='Palabras clave laborales encontradas'
+2025-07-03 21:41:38,264 - LegalAgent - INFO - Clasificación exitosa: laboral (Confianza: 0.95). Enrutando a documentos relevantes.
+2025-07-03 21:41:38,264 - LegalAgent - INFO - Decisión registrada: Tipo=routing, Categoría=laboral, Confianza=0.95, Razonamiento='Enrutado a documentos de laboral'
+2025-07-03 21:41:38,265 - LegalAgent - INFO - Enviando pregunta y contexto a Ollama para generar respuesta.
+2025-07-03 21:41:38,265 - LegalAgent.OllamaResponder - INFO - Enviando pregunta a Ollama (modelo: llama3)...
+2025-07-03 21:42:44,324 - LegalAgent.OllamaResponder - INFO - Respuesta de Ollama recibida exitosamente.
+2025-07-03 21:42:44,324 - LegalAgent - INFO - Decisión registrada: Tipo=processing, Categoría=laboral, Confianza=0.95, Razonamiento='Respuesta generada por Ollama con contexto de laboral.'
+2025-07-03 21:52:44,634 - LegalAgent - INFO - Procesando pregunta (hash: 6ad5b9283e1a3a92505847ab90c7265d): 'python -u "c:\Users\param\OneDrive\Desktop\Agente legal\agente-legal.py"'
+2025-07-03 21:52:44,634 - LegalAgent - INFO - Decisión registrada: Tipo=classification, Categoría=desconocido, Confianza=0.40, Razonamiento='No se identificaron palabras clave claras'
+2025-07-03 21:52:44,634 - LegalAgent - WARNING - Baja confianza en la clasificación (0.40). Activando fallback a Ollama con contexto completo.
+2025-07-03 21:52:44,634 - LegalAgent.OllamaResponder - INFO - Enviando pregunta a Ollama (modelo: llama3)...
+2025-07-03 21:54:46,703 - LegalAgent.OllamaResponder - ERROR - Error al hacer la solicitud a Ollama: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+2025-07-03 21:54:46,703 - LegalAgent - INFO - Decisión registrada: Tipo=fallback, Categoría=desconocido, Confianza=0.00, Razonamiento='Clasificación inicial con baja confianza, se usó Ollama con contexto general.'
+2025-07-03 21:54:46,705 - LegalAgent - INFO - Procesando pregunta (hash: 6ad5b9283e1a3a92505847ab90c7265d): 'python -u "c:\Users\param\OneDrive\Desktop\Agente legal\agente-legal.py"'
+2025-07-03 21:54:46,705 - LegalAgent - INFO - Decisión registrada: Tipo=classification, Categoría=desconocido, Confianza=0.40, Razonamiento='No se identificaron palabras clave claras'
+2025-07-03 21:54:46,706 - LegalAgent - WARNING - Baja confianza en la clasificación (0.40). Activando fallback a Ollama con contexto completo.
+2025-07-03 21:54:46,706 - LegalAgent.OllamaResponder - INFO - Enviando pregunta a Ollama (modelo: llama3)...
+2025-07-03 21:56:35,894 - LegalAgent.OllamaResponder - INFO - Respuesta de Ollama recibida exitosamente.
+2025-07-03 21:56:35,894 - LegalAgent - INFO - Decisión registrada: Tipo=fallback, Categoría=desconocido, Confianza=0.00, Razonamiento='Clasificación inicial con baja confianza, se usó Ollama con contexto general.'
+2025-07-03 21:56:35,897 - LegalAgent - INFO - Procesando pregunta (hash: 32aa079b90dc8ea155ad65e0daa31d17): 'EEE4python -u "c:\Users\param\OneDrive\Desktop\Agente legal\agente-legal.py"'
+2025-07-03 21:56:35,897 - LegalAgent - INFO - Decisión registrada: Tipo=classification, Categoría=desconocido, Confianza=0.40, Razonamiento='No se identificaron palabras clave claras'
+2025-07-03 21:56:35,898 - LegalAgent - WARNING - Baja confianza en la clasificación (0.40). Activando fallback a Ollama con contexto completo.
+2025-07-03 21:56:35,898 - LegalAgent.OllamaResponder - INFO - Enviando pregunta a Ollama (modelo: llama3)...
+2025-07-03 22:01:38,797 - LegalAgent - INFO - [CLASSIFICATION] Categor�a: contratos laborales | Confianza: 0.91 | Palabras clave asociadas a contratos laborales
+2025-07-03 22:01:38,797 - LegalAgent - INFO - [ROUTING] Categor�a: contratos laborales | Confianza: 0.91 | Enrutamiento exitoso
+2025-07-03 22:03:46,492 - LegalAgent - INFO - [PROCESSING] Categor�a: contratos laborales | Confianza: 0.91 | Respuesta generada con contexto espec�fico
+2025-07-03 22:25:52,135 - LegalAgent - INFO - Agente Legal inicializado correctamente
+2025-07-03 22:51:13,649 - LegalAgent - INFO - Agente Legal inicializado correctamente
