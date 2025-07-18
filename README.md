@@ -36,9 +36,20 @@ Sistema modular desarrollado en Python para responder consultas legales utilizan
 
 ## ▶️ Cómo ejecutar el agente legal
 
-### 1. Tener [Ollama](https://ollama.com) instalado y corriendo:
+### 1. Clonar el repositorio desde github
+- git clone https://github.com/RaulParamo/agente-legal-inteligente.git
+- cd agente-legal-inteligente  pip install requests
+### 2. Tener [Ollama](https://ollama.com) instalado y corriendo:
 
-```bash
-ollama run llama3
-ollama run mistral
+``bash
+- ollama run llama3
+- ollama run mistral
+
+### ✅ Evidencia de la integración Zapier + API Flask
+
+A continuación, se muestra la conexión funcional:
+
+📤 Pregunta enviada desde Google Forms  
+📡 Webhook activo en Zapier usando ngrok  
+📥 Respuesta generada automáticamente y enviada por Gmail
 
