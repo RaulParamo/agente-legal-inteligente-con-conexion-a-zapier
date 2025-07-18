@@ -1,6 +1,6 @@
 # 🤖 Agente Legal Inteligente
 
-Sistema modular desarrollado en Python para responder consultas legales utilizando múltiples Modelos de Lenguaje (LLMs) locales con enrutamiento inteligente, clasificación temática y fallback automático. Compatible con modelos como **LLaMA3**, **Mistral** (a través de [Ollama](https://ollama.com/)).
+Sistema modular desarrollado en Python para responder consultas legales utilizando múltiples Modelos de Lenguaje (LLMs) locales con enrutamiento inteligente, clasificación temática y fallback automático. Compatible con modelos como **LLaMA3**, **Mistral** (a través de [Ollama](https://ollama.com/) Y listo para entrar en fujo automático con Zapier.
 
 ---
 
