@@ -45,11 +45,8 @@ Sistema modular desarrollado en Python para responder consultas legales utilizan
 - ollama run llama3
 - ollama run mistral
 
-### ✅ Evidencia de la integración Zapier + API Flask
+### ## 🔁 Integración con Zapier
 
-A continuación, se muestra la conexión funcional:
+Este proyecto incluye una API construida con Flask que se conecta con un formulario web mediante **Zapier**.
 
-📤 Pregunta enviada desde Google Forms  
-📡 Webhook activo en Zapier usando ngrok  
-📥 Respuesta generada automáticamente y enviada por Gmail
 
