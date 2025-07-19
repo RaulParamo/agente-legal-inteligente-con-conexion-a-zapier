@@ -50,3 +50,50 @@ Sistema modular desarrollado en Python para responder consultas legales utilizan
 Este proyecto incluye una API construida con Flask que se conecta con un formulario web mediante **Zapier**.
 
 
+
+## 🔁 Flujo de trabajo: Automatización con Zapier y Mistral (Ollama)
+
+Este flujo permite recibir preguntas legales mediante un formulario y obtener respuestas automáticas generadas por IA local (Mistral en Ollama), integradas con herramientas como Google Forms, Gmail o Google Sheets vía **Zapier**.
+
+### 📌 Descripción paso a paso:
+
+1. 📝 **El usuario llena un formulario**
+   Un Google Form donde introduce una consulta legal.
+
+2. 🚀 **Zapier detecta una nueva respuesta**
+   Zapier se activa mediante el trigger correspondiente (Responder una pregunta de google forms.).
+
+3. 🔗 **Zapier envía un Webhook POST a la API Flask**
+   Se envía la pregunta legal al endpoint `POST /responder`.
+
+4. 🤖 **La app Flask reenvía la pregunta al modelo Mistral (Ollama)**
+   Ollama genera una respuesta legal basada en el contexto proporcionado.
+
+5. 📬 **La respuesta generada es devuelta a Zapier**
+   La API responde con la información legal generada.
+
+6. 📢 **Zapier entrega la respuesta**
+  Se notifica la respuesta al usuario por:
+
+   * 📧 Correo electrónico 
+ 
+
+---
+
+### 📊 Diagrama de flujo:
+
+```text
+[📝 Google Form / App / Gmail / etc.]
+              ↓
+     ⚡ Zapier (Trigger detecta entrada)
+              ↓
+    🔗 Webhook POST a API Flask (/responder)
+              ↓
+ 🧠 Ollama ejecuta modelo Mistral localmente
+              ↓
+ 🧾 Respuesta legal generada (devuelta a Zapier)
+              ↓
+ ✉️ Notificación / 📄 Guardado / 📢 Alerta
+```
+
+
